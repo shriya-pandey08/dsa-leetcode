@@ -1,29 +1,34 @@
-import java.util.*;
+import java.util.Scanner;
 
-class check {
-  public static void numberss(int n) {
-    int pos = 0;
-    int neg = 0;
-    int zero = 0;
-    for(int i=0;i<n;i++){
-    if (i > 0) {
-      pos = pos + 1;
-    } else if (i < 0) {
-      neg = neg + 1;
-    } else {
-      zero = zero + 1;
+class Check {
+  public static void countNumbers() {
+        Scanner sc = new Scanner(System.in);
+        int pos = 0, neg = 0, zero = 0;
+        char choice;
+
+        do {
+            System.out.print("Enter a number: ");
+            int num = sc.nextInt();
+
+            if (num > 0) {
+                pos++;
+            } else if (num < 0) {
+                neg++;
+            } else {
+                zero++;
+            }
+
+            System.out.print("Do you want to enter another number? (y/n): ");
+            choice = sc.next().charAt(0);
+        }while(choice=='y'||choice=='Y');
+
+  System.out.println("The total positive numbers: "+pos);System.out.println("The total negative numbers: "+neg);System.out.println("The total zeros: "+zero);
+
+  sc.close();
+
+  }
+
+  public static void main(String[] args) {
+        countNumbers();
     }
-  }
-  System.out.println("the total positive numbers is:" + pos);
-  System.out.println("the total negative numbers is:" + neg);
-  System.out.println("the total zero is:" + zero);
-}
-
-  public static void main(String args[]) {
-    System.out.println("enter the value of n:");
-    Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    numberss(n);
-    sc.close();
-  }
 }
