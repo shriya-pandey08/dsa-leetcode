@@ -14,5 +14,6 @@ public class abc {
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
     factorialcal(n);
+    sc.close();
   }
 }
