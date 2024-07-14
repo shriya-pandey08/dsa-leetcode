@@ -7,6 +7,7 @@ class series {
     }
     sum += i;
     PrintSum(i + 1, n, sum);
+    System.out.println(i);
 
   }
 
