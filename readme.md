@@ -1,1 +1,1 @@
-# This repository contains alll sort of java question
+# This repository contains all sort of java question
