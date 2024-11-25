@@ -1,2 +1,2 @@
-# This repository contains
+# DSA
 practice questions on java 
