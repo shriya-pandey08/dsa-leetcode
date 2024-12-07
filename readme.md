@@ -1,2 +1,2 @@
 # DSA
-practice questions on java 
+Language-java 
